@@ -1,0 +1,47 @@
+doctype html
+html
+	head
+		title Graff Vet Clinic
+		link(rel='stylesheet', href='/stylesheet/bootstrap.min.css')
+		link(rel='stylesheet', href='/stylesheet/normalize.css')
+		link(rel='stylesheet', href='/stylesheet/font-awesome.css')
+		link(rel='stylesheet', href='/stylesheet/style.css')
+	body
+		.sidebar
+			ul.sidebar-nav
+				li
+					a(href="/")
+						.fa.fa-home.sidebar-item &nbsp; Home
+				li
+					a(href="/customers")
+						.fa.fa-id-card.sidebar-item &nbsp; Customers
+				li
+					a(href="/customers")
+						.fa.fa-gears.sidebar-item &nbsp; Settings
+		.navbar.navbar-inverse
+			.navbar-header
+				button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar")
+					span.sr-only Toggle Navigation
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.brand.custom.navbar-brand(href="/")= title
+			.collapse.navbar-collapse#navbar
+				ul.nav.navbar-nav
+					li
+						a(href="/") Test
+					li
+						a(href="/") Link
+					li
+						a(href="/") Link
+		.content
+			ol.breadcrumb
+				li
+					a(href='test') Home
+			block content
+		.row.footer
+			.container.text-center
+				h4 Made with care by John Burd &copy; 2017
+
+		script(src='/javascript/bootstrap.min.js')
+		script(src='/javascript/font-awesome.js')

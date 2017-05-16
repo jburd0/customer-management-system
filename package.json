@@ -1,0 +1,20 @@
+{
+  "name": "graff-vet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "John Burd",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "morgan": "^1.7.0",
+    "mysql": "^2.13.0",
+    "pug": "^2.0.0-beta10",
+    "request": "^2.79.0"
+  }
+}
